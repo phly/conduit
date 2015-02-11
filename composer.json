@@ -27,8 +27,8 @@
   },
   "require": {
     "php": ">=5.4.8",
-    "phly/http": "~0.10.0",
-    "psr/http-message": "~0.8.0",
+    "phly/http": "dev-feature/parsed-body@dev",
+    "psr/http-message": "dev-feature/parsed-body@dev",
     "zendframework/zend-escaper": "~2.3@stable"
   },
   "require-dev": {
@@ -44,5 +44,15 @@
     "psr-4": {
       "PhlyTest\\Conduit\\": "test/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/weierophinney/http-message.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/weierophinney/http.git"
+    }
+  ]
 }
