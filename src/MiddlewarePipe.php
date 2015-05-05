@@ -92,16 +92,11 @@ class MiddlewarePipe implements MiddlewareInterface
      * @param null|callable|object $middleware Middleware
      * @return self
      */
-    public function pipe($path, $middleware = null)
+    public function pipe($path, callable $middleware = null)
     {
         if (null === $middleware && is_callable($path)) {
             $middleware = $path;
             $path       = '/';
-        }
-
-        // Ensure we have a valid handler
-        if (! is_callable($middleware)) {
-            throw new InvalidArgumentException('Middleware must be callable');
         }
 
         $this->pipeline->enqueue(new Route(
