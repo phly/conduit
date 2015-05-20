@@ -13,22 +13,15 @@ Installation and Requirements
 Install this library using composer:
 
 ```console
-$ composer require phly/conduit
+$ composer require phly/http phly/conduit
 ```
 
 Conduit has the following dependencies (which are managed by Composer):
 
-- `phly/http`, which provides implementations of the [proposed PSR HTTP message interfaces](https://github.com/php-fig/fig-standards/blob/master/proposed/http-message.md), as well as a "server" implementation similar to [node's http.Server](http://nodejs.org/api/http.html); this is the foundation on which Conduit is built.
+- `psr/http-message-implementation`, which is a virtual package specifying that a [PSR-7](http://www.php-fig.org/psr/psr-7) implementation must be installed. One such package is [phly/http](https://github.com/phly/http) (and hence the reference to it in the install line above).
 - `zendframework/zend-escaper`, used by the `FinalHandler` for escaping error messages prior to passing them to the response.
 
-You can provide your own request and response implementations if desired as long as they implement the PSR HTTP message interfaces; by default, Conduit uses `phly/http`.
-
-Contributing
-------------
-
-- Please write unit tests for any features or bug reports you have.
-- Please run unit tests before opening a pull request. You can do so using `./vendor/bin/phpunit`.
-- Please run CodeSniffer before opening a pull request, and correct any issues. Use the following to run it: `./vendor/bin/phpcs --standard=PSR2 --ignore=test/Bootstrap.php src test`.
+You can provide your own request and response implementations if desired as long as they implement the PSR HTTP message interfaces.
 
 Usage
 -----
