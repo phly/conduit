@@ -1,6 +1,16 @@
 Conduit
 =======
 
+> ## Abandoned! Or, rather, rebranded!
+>
+> phly/conduit has moved to the zendframework organization as
+> [zend-stratigility](https://github.com/zendframework/zend-stratigility)
+> (from Strata, meaning "layer," and "agility").
+>
+> Please use that package instead, and contribute issues and pull requests
+> against it I have closed issues and pull requests against phly/conduit at this
+> time.
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phly/conduit/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/phly/conduit/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/phly/conduit/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/phly/conduit/?branch=master)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/phly/conduit/badges/build.png?b=master)](https://scrutinizer-ci.com/g/phly/conduit/build-status/master)
