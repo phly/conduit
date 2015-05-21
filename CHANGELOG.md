@@ -18,9 +18,9 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
-- Modified `composer.json` to *require* `psr/http-message-implementation`, and,
-  in *development*, require `phly/http`; this allows substitution of PSR-7
-  implementations.
+- Modified `composer.json` to *require* only `psr/http-message`, *suggest*
+  `psr/http-message-implementation`, and, in *development*, require `phly/http`;
+  this allows substitution of PSR-7 implementations.
 
 ## 0.15.1 - 2015-05-14
 
