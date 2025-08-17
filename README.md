@@ -1,6 +1,8 @@
 Conduit
 =======
 
+> :warning: **Archived 2025-08-17**
+> 
 > ## Abandoned! Or, rather, rebranded!
 >
 > phly/conduit has moved to the zendframework organization as
